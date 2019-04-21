@@ -7,5 +7,6 @@ namespace BoxStars.Domain
     {
         public DbSet<Person> People { get; set; }
         public DbSet<HighScore> HighScores { get; set; }
+        public DbSet<Error> Errors { get; set; }
     }
 }

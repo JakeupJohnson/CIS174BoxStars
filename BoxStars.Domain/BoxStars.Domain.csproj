@@ -47,12 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Error.cs" />
     <Compile Include="Entities\HighScore.cs" />
     <Compile Include="Entities\Person.cs" />
     <Compile Include="GameContext.cs" />
     <Compile Include="Migrations\201904200648270_InitialDatabaseCreation.cs" />
     <Compile Include="Migrations\201904200648270_InitialDatabaseCreation.Designer.cs">
       <DependentUpon>201904200648270_InitialDatabaseCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904210626545_Error entities.cs" />
+    <Compile Include="Migrations\201904210626545_Error entities.Designer.cs">
+      <DependentUpon>201904210626545_Error entities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904210635215_test\create error table.cs" />
+    <Compile Include="Migrations\201904210654477_Create error table.cs" />
+    <Compile Include="Migrations\201904210654477_Create error table.Designer.cs">
+      <DependentUpon>201904210654477_Create error table.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +74,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201904200648270_InitialDatabaseCreation.resx">
       <DependentUpon>201904200648270_InitialDatabaseCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904210626545_Error entities.resx">
+      <DependentUpon>201904210626545_Error entities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904210654477_Create error table.resx">
+      <DependentUpon>201904210654477_Create error table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

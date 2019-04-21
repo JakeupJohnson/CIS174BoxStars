@@ -63,6 +63,15 @@ namespace BoxStars.Domain.Migrations
                 Score = 2500,
                 DateAttained = DateTime.Now
             });
+
+            context.Errors.AddOrUpdate(new Error
+            {
+                ErrorId = Guid.Parse("c73b8801-1cc9-48f4-b84f-6c014d8af9f1"),
+                ErrorDate = DateTime.Now,
+                ErrorMessage = "Error Message",
+                StackTrace = "Stack Trace",
+                InnerExceptions = "Inner Exceptions"
+            });
         }
     }
 }
