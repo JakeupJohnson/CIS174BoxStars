@@ -1,0 +1,29 @@
+﻿@model BoxStars.Web.Models.IndexViewModel
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>Change your account settings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <p>
+            @Html.ActionLink("View Profile", "Update", new { controller = "Person", action = "Update", id = UrlParameter.Optional }, null)
+        </p>
+        <p>
+            @if (Model.HasPassword)
+            {
+            @Html.ActionLink("Change Password", "ChangePassword")
+            }
+             else
+            {
+            @Html.ActionLink("Create Password", "SetPassword")
+            }
+        </p>
+        <!--
+        <dt>External Logins:</dt>
+        <dd>
+            @Model.Logins.Count [
+            @Html.ActionLink("Manage", "ManageLogins") ]
+        </dd>
+        -->
+    </dl>
+</div>

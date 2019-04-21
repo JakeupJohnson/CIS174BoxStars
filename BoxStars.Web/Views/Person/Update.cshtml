@@ -1,0 +1,27 @@
+﻿@model BoxStars.Web.Models.CreatePersonModel
+<script src="~/Scripts/BoxStars/Person.js" type="text/javascript"></script>
+<h2>Update Profile</h2>
+<input id="userID" value="userId" type="hidden" />
+<script>
+    searchPeople();
+</script>
+
+<div id="CreateProfile" class="hidden">
+    @Html.ActionLink("Please Create a Profile", "Create")
+</div>
+
+<div class="alert alert-success hidden" role="alert" id="successMessage"></div>
+
+<div class="alert alert-danger hidden" role="alert" id="errorMessage"></div>
+
+<div id="Form" class="hidden">
+    <input id="personId" type="hidden">
+    <form name="personForm">
+        <p>First Name: <input id="firstName" type="text" class="form-control" required></p>
+        <p>Last Name: <input id="lastName" type="text" class="form-control" required></p>
+        <p>Date Created: <input id="dateCreated" type="datetime" class="form-control" readonly></p>
+        <p>Email: <input id="email" type="email" class="form-control" required></p>
+        <p>Phone Number: <input id="phoneNumber" class="form-control" type="text">Format: 123-456-7890</p>
+        <button type="button" onclick="updatePerson()" value="Save">Save</button>
+    </form>
+</div>
