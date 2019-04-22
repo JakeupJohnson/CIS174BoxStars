@@ -152,7 +152,7 @@ function updatePerson() {
     });
 }
 
-//The ToJavaScriptDate() function accepts a value in \/Date(ticks)\/ format and returns a date string in MM/dd/yyyy format.
+//The ToJavaScriptDate() function accepts a value in \/Date(ticks)\/ format and returns a date string in MM/dd/yyyy format. 
 // Function found on - https://stackoverflow.com/questions/27314663/asp-net-parse-datetime-result-from-ajax-call-to-javascript-dat
 function ToJavaScriptDate() {
     var pattern = /Date\(([^)]+)\)/;

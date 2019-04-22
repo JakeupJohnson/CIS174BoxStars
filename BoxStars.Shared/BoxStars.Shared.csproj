@@ -47,11 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Orchestrators\ErrorOrchestrator.cs" />
     <Compile Include="Orchestrators\HighScoreOrchestrator.cs" />
+    <Compile Include="Orchestrators\Interfaces\IErrorOrchestrator.cs" />
     <Compile Include="Orchestrators\Interfaces\IHighScoreOrchestrator.cs" />
     <Compile Include="Orchestrators\Interfaces\IPersonOrchestrator.cs" />
     <Compile Include="Orchestrators\PersonOrchestrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ErrorViewModel.cs" />
     <Compile Include="ViewModels\HighScoreViewModel.cs" />
     <Compile Include="ViewModels\PersonViewModel.cs" />
   </ItemGroup>
